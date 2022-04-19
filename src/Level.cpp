@@ -29,6 +29,7 @@ Level::Level(Renderer* renderer, Camera* cam, Shader* shader, UI* ui, btDiscrete
 :renderer(renderer), cam(cam), shader(shader), physicsWorld(physicsWorld), p_physicsManager(physicsmanager), ui(ui)
 {
 	keyState = keyPress;
+	p_physicsManager->UpdateDebug = true;
 	LoadLevel();
 }
 
@@ -113,7 +114,7 @@ void Level::Update(float dt)
 		ui->restartLevel = false;
 	}
 
-	if(players[0]->getObject()->getTransComponent()->WorldPosition.y <= 0 )
+	if(players[0]->getObject()->getTransComponent()->WorldPosition.y <= -5 )
 	{
 		ui->setUIMode(UIMode::WIN_SCREEN);
 		p_physicsManager->UpdateDebug = false;
