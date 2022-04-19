@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{27c9f8b5-b302-437e-b6b0-b55f3cb36c90}</ProjectGuid>
+    <RootNamespace>SimplWin</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;DEBUG=0;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\assimp;$(SolutionDir)..\src;$(SolutionDir)Vendor;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\glew-2.1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)Dependencies\lib\GLFW\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\glew-2.1.0\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\assimp</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;DEBUG=1;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\assimp;$(SolutionDir)..\src;$(SolutionDir)Vendor;$(SolutionDir)Dependencies\include\GLFW;$(SolutionDir)Dependencies\include\glew-2.1.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)Dependencies\lib\GLFW;$(SolutionDir)Dependencies\lib\glew-2.1.0;$(SolutionDir)Dependencies\lib\assimp</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;IMGUI_DEBUG=1;_CONSOLE;BT_THREADSAFE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\assimp;$(SolutionDir)..\src;$(SolutionDir)Vendor;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\glew-2.1.0;$(SolutionDir)Dependencies\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)Dependencies\lib\GLFW\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\glew-2.1.0\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\bullet\$(Configuration);$(SolutionDir)Dependencies\lib\assimp</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;assimp-vc142-mt.lib;assimp.lib;BulletCollision_vs2010_x64_debug.lib;BulletDynamics_vs2010_x64_debug.lib;BulletSoftBody_vs2010_x64_debug.lib;LinearMath_vs2010_x64_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /D /Q "$(SolutionDir)Dependencies\dll\assimp" "$(SolutionDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_CONSOLE;IMGUI_DEBUG=0;BT_THREADSAFE=1;_ITERATOR_DEBUG_LEVEL=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\assimp;$(SolutionDir)..\src;$(SolutionDir)Vendor;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\glew-2.1.0;$(SolutionDir)Dependencies\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(SolutionDir)Dependencies\lib\GLFW\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\glew-2.1.0\$(LibrariesArchitecture);$(SolutionDir)Dependencies\lib\assimp;$(SolutionDir)Dependencies\lib\bullet\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;assimp-vc142-mt.lib;assimp.lib;BulletCollision_vs2010_x64_debug.lib;BulletDynamics_vs2010_x64_debug.lib;BulletSoftBody_vs2010_x64_debug.lib;LinearMath_vs2010_x64_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /D /Q "$(SolutionDir)Dependencies\dll\assimp" "$(SolutionDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Bullet.cpp" />
+    <ClCompile Include="..\src\Camera.cpp" />
+    <ClCompile Include="..\src\Enemy.cpp" />
+    <ClCompile Include="..\src\Game.cpp" />
+    <ClCompile Include="..\src\IndexBuffer.cpp" />
+    <ClCompile Include="..\src\Level.cpp" />
+    <ClCompile Include="..\src\Map.cpp" />
+    <ClCompile Include="..\src\Light.cpp" />
+    <ClCompile Include="..\src\Mesh.cpp" />
+    <ClCompile Include="..\src\Model.cpp" />
+    <ClCompile Include="..\src\GameObject.cpp" />
+    <ClCompile Include="..\src\ObjectManager.cpp" />
+    <ClCompile Include="..\src\PhysicsComponent.cpp" />
+    <ClCompile Include="..\src\Player.cpp" />
+    <ClCompile Include="..\src\Random.cpp" />
+    <ClCompile Include="..\src\Renderer.cpp" />
+    <ClCompile Include="..\src\Shader.cpp" />
+    <ClCompile Include="..\src\Texture.cpp" />
+    <ClCompile Include="..\src\TitleScreen.cpp" />
+    <ClCompile Include="..\src\Transform.cpp" />
+    <ClCompile Include="..\src\GameState.cpp" />
+    <ClCompile Include="..\src\UI.cpp" />
+    <ClCompile Include="..\src\VertexArray.cpp" />
+    <ClCompile Include="..\src\VertexBuffer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Vendor\stb_image\stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Bullet.h" />
+    <ClInclude Include="..\src\Camera.h" />
+    <ClInclude Include="..\src\Enemy.h" />
+    <ClInclude Include="..\src\Game.h" />
+    <ClInclude Include="..\src\IndexBuffer.h" />
+    <ClInclude Include="..\src\Level.h" />
+    <ClInclude Include="..\src\Counter.h" />
+    <ClInclude Include="..\src\Map.h" />
+    <ClInclude Include="..\src\Light.h" />
+    <ClInclude Include="..\src\Mesh.h" />
+    <ClInclude Include="..\src\Model.h" />
+    <ClInclude Include="..\src\GameObject.h" />
+    <ClInclude Include="..\src\ObjectManager.h" />
+    <ClInclude Include="..\src\PhysicsComponent.h" />
+    <ClInclude Include="..\src\Player.h" />
+    <ClInclude Include="..\src\Random.h" />
+    <ClInclude Include="..\src\Renderer.h" />
+    <ClInclude Include="..\src\Shader.h" />
+    <ClInclude Include="..\src\tempStorage.h" />
+    <ClInclude Include="..\src\Texture.h" />
+    <ClInclude Include="..\src\TitleScreen.h" />
+    <ClInclude Include="..\src\Transform.h" />
+    <ClInclude Include="..\src\GameState.h" />
+    <ClInclude Include="..\src\UI.h" />
+    <ClInclude Include="..\src\VerterBufferLayout.h" />
+    <ClInclude Include="..\src\VertexArray.h" />
+    <ClInclude Include="..\src\VertexBuffer.h" />
+    <ClInclude Include="Vendor\imgui\imconfig.h" />
+    <ClInclude Include="Vendor\imgui\imgui.h" />
+    <ClInclude Include="Vendor\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Vendor\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Vendor\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="Vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="Vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="Vendor\stb_image\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\shaders\basic.frag" />
+    <None Include="..\res\shaders\basic.vert" />
+    <None Include="..\res\shaders\screenShader.frag" />
+    <None Include="..\res\shaders\screenShader.vert" />
+    <None Include="..\res\shaders\basicColor.frag" />
+    <None Include="..\res\shaders\basicColor.vert" />
+    <None Include="..\res\shaders\basicLight.frag" />
+    <None Include="..\res\shaders\basicLight.vert" />
+    <None Include="..\res\shaders\basicTex.frag" />
+    <None Include="..\res\shaders\basicTex.vert" />
+    <None Include="..\SimplPi2\res\models\acho_Illusion_scene.obj">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\SimplPi2\res\models\humanTEST.mtl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SimplPi2\res\models\humanTEST.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SimplPi2\res\models\OBJ\SK_Veh_4x4_Car_Alt_01.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_00_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_01_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_02_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_03_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_04_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_05_delay-0.1s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_06_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_07_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_08_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_09_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_10_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_11_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_12_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_13_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_14_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_15_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_16_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_17_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_18_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_19_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_20_delay-0.07s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_21_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_22_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_23_delay-0.04s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_24_delay-0.1s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_25_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_26_delay-0.07s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_27_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_28_delay-0.04s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_29_delay-0.1s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_30_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_31_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_32_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_33_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_34_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_35_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_36_delay-0.09s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_37_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_38_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_39_delay-0.04s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_40_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_41_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_42_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_43_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_44_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_45_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_46_delay-0.07s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_47_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_48_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_49_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_50_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_51_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_52_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_53_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_54_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_55_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_56_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_57_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_58_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_59_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_60_delay-0.12s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_61_delay-0.06s.png" />
+    <Image Include="..\SimplPi2\res\textures\jacco\frame_62_delay-0.01s.png" />
+    <Image Include="..\SimplPi2\res\textures\tobyFestive.png" />
+    <Image Include="..\SimplPi2\res\textures\tobyFestive2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\res\names.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

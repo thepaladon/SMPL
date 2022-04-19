@@ -1,0 +1,15 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2022 Aspose Pty Ltd.
+# File created: 04/03/2022 17:13:16
+
+newmtl DefaultMaterial
+Ka 0.2 0.2 0.2
+Kd 0.60000002384185792 0.60000002384185792 0.60000002384185792
+d 1
+Tr 0
+illum 2
+Ks 0.2 0.2 0.2
+Ns 20
+map_Kd Arrow_DefaultMaterial_BaseColor.png
+map_Bump Arrow_DefaultMaterial_Normal.png
+map_Ks Arrow_DefaultMaterial_Metallic.png

@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Bullet.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectManager.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexBuffer.cpp">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexArray.cpp">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer.cpp">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IndexBuffer.cpp">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameState.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Level.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TitleScreen.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UI.cpp">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Random.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PhysicsComponent.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_demo.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_draw.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_tables.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\imgui\imgui_widgets.cpp">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\stb_image\stb_image.cpp">
+      <Filter>Close External Dependencies\stb_image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transform.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Source Code\Component Code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>Source Code\Object Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Bullet.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Counter.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ObjectManager.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBuffer.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexArray.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VerterBufferLayout.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBuffer.h">
+      <Filter>Source Code\OpenGL Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameState.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Level.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TitleScreen.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI.h">
+      <Filter>Source Code\Game State Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Random.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PhysicsComponent.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tempStorage.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imconfig.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_impl_opengl3.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imgui_internal.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_rectpack.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_textedit.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\imgui\imstb_truetype.h">
+      <Filter>Close External Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="external\stb_image\stb_image.h">
+      <Filter>Close External Dependencies\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Transform.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.h">
+      <Filter>Source Code\Component Code</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>Source Code\Object Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{68f92372-0f02-40d1-888c-ec9d3b0926ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{58a497ca-77f2-4a57-a126-1cbb34bb5495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Images">
+      <UniqueIdentifier>{18060d4e-5171-4a94-9746-c16ad261c935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ">
+      <UniqueIdentifier>{bc214e98-05b7-423b-a2ae-e41486f56f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Close External Dependencies">
+      <UniqueIdentifier>{0db0c64e-9a30-4769-841f-8c5b10f1e46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Cube">
+      <UniqueIdentifier>{724bb0bc-c976-4cc3-a812-ee1f0042dafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Weapons">
+      <UniqueIdentifier>{d33d5231-1a28-4929-9110-9d09a587e839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Enemy">
+      <UniqueIdentifier>{ba2cdad5-47e6-4093-916f-526a2f41b80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Weapons\Crystal">
+      <UniqueIdentifier>{14484ae1-39fc-4e10-9c0b-a9887da5beaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Weapons\Dagger">
+      <UniqueIdentifier>{6b8a977f-f0e1-4247-a161-f37e53350764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Weapons\Axe">
+      <UniqueIdentifier>{7fb535b0-b30c-439f-b4ae-6cdf06f52ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Weapons\Arrow">
+      <UniqueIdentifier>{7d2a3f0b-141a-4d6a-9e6a-71d60498b22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Cube\Rubble">
+      <UniqueIdentifier>{bc3649ba-876a-452b-ade2-3341f0a08311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Cube\Brick">
+      <UniqueIdentifier>{7e9cf79c-e4cf-48e8-9207-ba3afb424bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Code">
+      <UniqueIdentifier>{045bdf47-5d6d-440c-ae64-aac4df61c9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Code\Game State Code">
+      <UniqueIdentifier>{03561a51-6dcc-4455-beba-2c812d7c65c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Code\Component Code">
+      <UniqueIdentifier>{eb072eb4-3d68-4782-922a-27631daec753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Code\Object Code">
+      <UniqueIdentifier>{420572b8-7216-4b2f-911f-9caa13df945b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Code\OpenGL Wrappers">
+      <UniqueIdentifier>{615f8579-e5de-4c0f-8463-09a54b290834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Close External Dependencies\ImGui">
+      <UniqueIdentifier>{5d8fba5b-6f32-469a-beb7-f8c62f331002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Close External Dependencies\stb_image">
+      <UniqueIdentifier>{644747f2-c925-4b50-9aab-233e18438c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\WaveOBJ\Cube\Metal_abstract">
+      <UniqueIdentifier>{3f653084-47e8-49c9-8bb4-a72aea453aa4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shaders\basicTex.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basic.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basic.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basicColor.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basicColor.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basicLight.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basicLight.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\basicTex.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\screenShader.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\screenShader.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\physicsDebug.frag">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\shaders\physicsDebug.vert">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="res\models\backpack\backpack.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res\models\backpack\backpack.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res\lvl1.csv">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res\models\goblin\goblin.mtl">
+      <Filter>Resources\WaveOBJ\Enemy</Filter>
+    </None>
+    <None Include="res\models\Crystal\crystal.mtl">
+      <Filter>Resources\WaveOBJ\Weapons\Crystal</Filter>
+    </None>
+    <None Include="res\models\Dagger\dagger.mtl">
+      <Filter>Resources\WaveOBJ\Weapons\Dagger</Filter>
+    </None>
+    <None Include="res\models\VikingAxe\vikaxe.mtl">
+      <Filter>Resources\WaveOBJ\Weapons\Axe</Filter>
+    </None>
+    <None Include="res\models\Arrow\arrow.mtl">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </None>
+    <None Include="res\models\ground_rubble\cube.mtl">
+      <Filter>Resources\WaveOBJ\Cube\Rubble</Filter>
+    </None>
+    <None Include="res\models\wall_brick\cube.mtl">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </None>
+    <None Include="res\models\wall_brick\cube.obj">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </None>
+    <None Include="res\models\Arrow\arrow.obj">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </None>
+    <None Include="res\models\Crystal\crystal.obj">
+      <Filter>Resources\WaveOBJ\Weapons\Crystal</Filter>
+    </None>
+    <None Include="res\models\Dagger\Dagger.obj">
+      <Filter>Resources\WaveOBJ\Weapons\Dagger</Filter>
+    </None>
+    <None Include="res\models\VikingAxe\Viking Axe.obj">
+      <Filter>Resources\WaveOBJ\Weapons\Axe</Filter>
+    </None>
+    <None Include="res\models\goblin\goblin.obj">
+      <Filter>Resources\WaveOBJ\Enemy</Filter>
+    </None>
+    <None Include="res\models\ground_rubble\cube.obj">
+      <Filter>Resources\WaveOBJ\Cube</Filter>
+    </None>
+    <None Include="res\models\Metal_Abstract\cube.mtl">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </None>
+    <None Include="res\models\Metal_Abstract\cube.obj">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\textures\container2.png">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\textures\container2_specular.png">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\textures\brickwall.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\textures\brickwall_normal.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\backpack\diffuse.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\backpack\ao.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\backpack\specular.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\backpack\roughness.jpg">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\backpack\normal.png">
+      <Filter>Resources\Images</Filter>
+    </Image>
+    <Image Include="res\models\goblin\Imp_D.tga">
+      <Filter>Resources\WaveOBJ\Enemy</Filter>
+    </Image>
+    <Image Include="res\models\Crystal\crystal_basecolor.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Crystal</Filter>
+    </Image>
+    <Image Include="res\models\Crystal\crystal_metallic.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Crystal</Filter>
+    </Image>
+    <Image Include="res\models\Crystal\crystal_normal.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Crystal</Filter>
+    </Image>
+    <Image Include="res\models\Dagger\dagger_diffuse.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Dagger</Filter>
+    </Image>
+    <Image Include="res\models\Dagger\dagger_normal.png">
+      <Filter>Resources\WaveOBJ\Weapons\Dagger</Filter>
+    </Image>
+    <Image Include="res\models\Dagger\dagger_specular.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Dagger</Filter>
+    </Image>
+    <Image Include="res\models\VikingAxe\AxeMaterial_Albedo.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Axe</Filter>
+    </Image>
+    <Image Include="res\models\VikingAxe\AxeMaterial_Metallic.png">
+      <Filter>Resources\WaveOBJ\Weapons\Axe</Filter>
+    </Image>
+    <Image Include="res\models\VikingAxe\AxeMaterial_Normal.jpg">
+      <Filter>Resources\WaveOBJ\Weapons\Axe</Filter>
+    </Image>
+    <Image Include="res\models\Arrow\Arrow_DefaultMaterial_BaseColor.png">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </Image>
+    <Image Include="res\models\Arrow\Arrow_DefaultMaterial_Height.png">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </Image>
+    <Image Include="res\models\Arrow\Arrow_DefaultMaterial_Metallic.png">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </Image>
+    <Image Include="res\models\Arrow\Arrow_DefaultMaterial_Normal.png">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </Image>
+    <Image Include="res\models\Arrow\Arrow_DefaultMaterial_Roughness.png">
+      <Filter>Resources\WaveOBJ\Weapons\Arrow</Filter>
+    </Image>
+    <Image Include="res\models\ground_rubble\Rubble_001_COLOR.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Rubble</Filter>
+    </Image>
+    <Image Include="res\models\ground_rubble\Rubble_001_NRM.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Rubble</Filter>
+    </Image>
+    <Image Include="res\models\ground_rubble\Rubble_001_SPEC.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Rubble</Filter>
+    </Image>
+    <Image Include="res\models\wall_brick\Brick_Wall_017_ambientOcclusion.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </Image>
+    <Image Include="res\models\wall_brick\Brick_Wall_017_basecolor.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </Image>
+    <Image Include="res\models\wall_brick\Brick_Wall_017_height.png">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </Image>
+    <Image Include="res\models\wall_brick\Brick_Wall_017_normal.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </Image>
+    <Image Include="res\models\wall_brick\Brick_Wall_017_roughness.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Brick</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_ambientOcclusion.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_basecolor.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_height.png">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_metallic.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_normal.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_opacity.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+    <Image Include="res\models\Metal_Abstract\Metal_Abstract_001_roughness.jpg">
+      <Filter>Resources\WaveOBJ\Cube\Metal_abstract</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\surnames.txt">
+      <Filter>Resources</Filter>
+    </Text>
+    <Text Include="res\names.txt">
+      <Filter>Resources</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
